@@ -32,4 +32,7 @@ class WebSocketEvents1 extends Simulation  {
     .exec(ws("closeconnection").close)
 
   setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+    .assertions(
+      global.successfulRequests.percent.is(100)
+    )
 }
