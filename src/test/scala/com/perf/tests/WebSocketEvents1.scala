@@ -18,7 +18,7 @@ class WebSocketEvents1 extends Simulation  {
     //.exec(http("firstewq").get("/"))
 
     .exec(ws("opensocket").connect("/.ws")
-      .onConnected(exec(ws("sendmessage").sendText("hello")).pause(2)
+      .onConnected(exec(ws("sendmessage").sendText("helloo")).pause(2)
         .exec(ws("send2ndmessage").sendText("I am taufee")
           .await(20)(ws.checkTextMessage("check1").check(regex(".*taufee.*").saveAs("mymessages")))
         )))
