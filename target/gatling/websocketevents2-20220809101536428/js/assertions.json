@@ -1,0 +1,10 @@
+{
+  "simulation": "com.perf.tests.WebSocketEvents2",
+  "simulationId": "websocketevents2",
+  "start": 1660040136428,
+  "description": "",
+  "scenarios": ["testwebscoket"],
+  "assertions": [
+
+  ]
+}
